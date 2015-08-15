@@ -1,5 +1,6 @@
 ###More Modern Web App Template
 
+####included
 - ES6
 - Express
 - Bootstrap
@@ -9,17 +10,13 @@
 - Webpack
 - Ejs
 
-1. Install dependencies
+
+####installation
 ```
+# install deps
 npm install && bower install
-``
-
-2. Compile
-```
+# compile frontend
 webpack
-```
-
-3. Run
-```
+# start server
 node server/app.js
 ```
