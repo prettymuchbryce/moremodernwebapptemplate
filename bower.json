@@ -1,0 +1,20 @@
+{
+  "name": "modernwebapptemplate",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "q": "~2.0.2",
+    "bootstrap": "~3.3.5",
+    "lodash": "~3.9.3",
+    "react": "~0.13.3"
+  }
+}
