@@ -14,7 +14,7 @@
 ####installation
 ```
 # install some global stuff if you don't have it
-npm install -g webpack bower
+npm install webpack bower -g
 # install deps
 npm install && bower install
 # compile frontend
