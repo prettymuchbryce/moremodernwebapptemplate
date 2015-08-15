@@ -4,7 +4,6 @@ import GlobeIcon from '../../img/globe.png';
 class ComponentMain extends React.Component {
 
     constructor() {
-        console.log(GlobeIcon)
         super();
     }
 
