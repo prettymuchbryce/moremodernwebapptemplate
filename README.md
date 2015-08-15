@@ -6,9 +6,9 @@
 - Bootstrap
 - React
 - LESS
-- Lodash
-- Webpack
-- Ejs
+- lodash
+- webpack
+- EJS
 
 
 ####installation
