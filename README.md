@@ -12,17 +12,16 @@
 * webpack
 * EJS
 
-
 ####installation
 
-# install some global stuff if you don't have it
-    npm install webpack bower -g
+### install some global stuff if you don't have it
+    npm install webpack -g
 
-# install deps
-    npm install && bower install
+### install deps
+    npm install
 
-# compile frontend
-    webpack
+### compile frontend
+    npm run build
 
-# start server
-    node server/app.js
+### start server
+    npm run server
