@@ -1,24 +1,28 @@
 ###More Modern Web App Template
 
 ####included
-- ES6
-- Express
-- Bootstrap
-- React
-- LESS
-- lodash
-- webpack
-- EJS
+* ES6
+* Express
+* Bootstrap
+* React
+* react-router
+* redux
+* LESS
+* lodash
+* webpack
+* EJS
 
 
 ####installation
-```
+
 # install some global stuff if you don't have it
-npm install webpack bower -g
+    npm install webpack bower -g
+
 # install deps
-npm install && bower install
+    npm install && bower install
+
 # compile frontend
-webpack
+    webpack
+
 # start server
-node server/app.js
-```
+    node server/app.js

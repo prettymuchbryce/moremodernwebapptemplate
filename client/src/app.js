@@ -1,6 +1,15 @@
 import React from 'react';
-import ComponentMain from './components/main';
 import MainStyle from '../less/main.less';
+import { Provider } from 'react-redux';
+import configureStore from './store/store';
+import createRoutes from './routes/index';
+import ReactDOM from 'react-dom';
+import { browserHistory } from 'react-router';
 
-var mainComponent = React.createElement(ComponentMain);
-React.render(mainComponent, document.getElementById('react-container'));
+const store = configureStore();
+
+ReactDOM.render((
+    <Provider store={store}>
+        { createRoutes(browserHistory) }
+    </Provider>
+), document.getElementById('react-container'));

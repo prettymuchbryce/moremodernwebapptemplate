@@ -6,7 +6,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.jsx?$/, loader: 'babel-loader' },
+            { test: /\.jsx?$/, loader: 'babel-loader', query: {stage: 0} },
             { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' },
             { test: /\.css$/, loader: 'style-loader!css-loader' },
             // inline base64 URLs for <=8k images, direct URLs for the rest
