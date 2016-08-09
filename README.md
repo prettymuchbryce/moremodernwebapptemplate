@@ -11,6 +11,7 @@
 * lodash
 * webpack
 * EJS
+* superagent
 
 ####installation
 

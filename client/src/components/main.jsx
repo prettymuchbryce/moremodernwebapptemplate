@@ -13,11 +13,41 @@ class ComponentMain extends React.Component {
         this.props.dispatch(testAction("foo"));
     }
 
+
+  // <div className="hello-world">
+  //               Hello World<br/>
+  //               <img className="globe-image" onClick={this.doClick} src={GlobeIcon} />
+  //           </div>
     render() {
         return (
-            <div className="hello-world">
-                Hello World<br/>
-                <img className="globe-image" onClick={this.doClick} src={GlobeIcon} />
+            <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                  <div className="col-md-1">.col-md-1</div>
+                </div>
+                <div className="row">
+                  <div className="col-md-8">.col-md-8</div>
+                  <div className="col-md-4">.col-md-4</div>
+                </div>
+                <div className="row">
+                  <div className="col-md-4">.col-md-4</div>
+                  <div className="col-md-4">.col-md-4</div>
+                  <div className="col-md-4">.col-md-4</div>
+                </div>
+                <div className="row">
+                  <div className="col-md-6">.col-md-6</div>
+                  <div className="col-md-6">.col-md-6</div>
+                </div>
             </div>
         );
     }

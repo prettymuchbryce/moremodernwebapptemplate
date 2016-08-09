@@ -1,5 +1,21 @@
+const entries = [
+    './node_modules/bootstrap/js/affix.js',
+    './node_modules/bootstrap/js/alert.js',
+    './node_modules/bootstrap/js/button.js',
+    './node_modules/bootstrap/js/carousel.js',
+    './node_modules/bootstrap/js/collapse.js',
+    './node_modules/bootstrap/js/dropdown.js',
+    './node_modules/bootstrap/js/modal.js',
+    './node_modules/bootstrap/js/scrollspy.js',
+    './node_modules/bootstrap/js/tab.js',
+    './node_modules/bootstrap/js/tooltip.js',
+    './node_modules/bootstrap/js/popover.js',
+    './node_modules/bootstrap/js/transition.js',
+    './client/src/app.js'
+]
+
 module.exports = {
-    entry: './client/src/app.js',
+    entry: entries,
     output: {
         path: './static',
         filename: 'js/all.js'
