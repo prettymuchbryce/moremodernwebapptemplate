@@ -2,6 +2,7 @@ import React from 'react';
 import GlobeIcon from '../../img/globe.png';
 import { testAction } from '../actions/test';
 import { connect } from 'react-redux';
+import { getStuff } from '../api';
 
 class ComponentMain extends React.Component {
 
@@ -13,41 +14,22 @@ class ComponentMain extends React.Component {
         this.props.dispatch(testAction("foo"));
     }
 
+    componentWillMount() {
+        getStuff()
+        .then(res => {
+            const body = res.body;
+            // console.log('res', body);
+        }).fail(err => {
+            // console.log('err', err);
+        })
+        // console.log(this.props.foo)
+    }
 
-  // <div className="hello-world">
-  //               Hello World<br/>
-  //               <img className="globe-image" onClick={this.doClick} src={GlobeIcon} />
-  //           </div>
     render() {
         return (
-            <div className="container-fluid">
-                <div className="row">
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                  <div className="col-md-1">.col-md-1</div>
-                </div>
-                <div className="row">
-                  <div className="col-md-8">.col-md-8</div>
-                  <div className="col-md-4">.col-md-4</div>
-                </div>
-                <div className="row">
-                  <div className="col-md-4">.col-md-4</div>
-                  <div className="col-md-4">.col-md-4</div>
-                  <div className="col-md-4">.col-md-4</div>
-                </div>
-                <div className="row">
-                  <div className="col-md-6">.col-md-6</div>
-                  <div className="col-md-6">.col-md-6</div>
-                </div>
+            <div className="hello-world">
+                    Hello World<br/>
+                 <img className="globe-image" onClick={this.doClick} src={GlobeIcon} />
             </div>
         );
     }
@@ -56,7 +38,7 @@ class ComponentMain extends React.Component {
 export default connect(
     (state) => {
         return {
-
+            foo: state.main.foo
         }
     }
 )(ComponentMain)

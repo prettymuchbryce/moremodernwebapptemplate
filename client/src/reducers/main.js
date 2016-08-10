@@ -1,11 +1,11 @@
 import * as ActionTypes from '../actions/action-types';
 import _ from 'lodash';
 
-let defaultState = {
-    main: {}
+let initialState = {
+    "foo": true
 };
 
-export default function(state = defaultState, action) {
+export default function(state = initialState, action) {
     let cloned;
     switch(action.type) {
         case ActionTypes.TEST_ACTION:
