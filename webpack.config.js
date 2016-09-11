@@ -11,7 +11,7 @@ const entries = [
     './node_modules/bootstrap/js/tooltip.js',
     './node_modules/bootstrap/js/popover.js',
     './node_modules/bootstrap/js/transition.js',
-    './client/src/app.js'
+    './client/src/app.jsx'
 ]
 
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.jsx?$/, loader: 'babel-loader', query: {stage: 0} },
+            { test: /\.jsx?$/, loader: 'babel-loader', query: { presets: ['react', 'es2015', 'stage-0'] } },
             { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' },
             { test: /\.css$/, loader: 'style-loader!css-loader' },
             // inline base64 URLs for <=8k images, direct URLs for the rest
