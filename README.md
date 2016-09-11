@@ -25,7 +25,7 @@
     npm run build
 
 ### start server
-    npm run server
+    npm start
 
 ### watch
     npm run watch
