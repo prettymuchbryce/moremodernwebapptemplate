@@ -1,5 +1,7 @@
 ###More Modern Web App Template
 
+This is currently my go-to starter template for spinning up web stuff.
+
 ####included
 * ES6
 * Express
