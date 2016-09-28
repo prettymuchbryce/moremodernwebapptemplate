@@ -1,3 +1,5 @@
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 ###More Modern Web App Template
 
 This is currently my go-to starter template for spinning up web stuff.
