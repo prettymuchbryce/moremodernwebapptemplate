@@ -17,11 +17,6 @@ This is currently my go-to starter template for spinning up web stuff.
 * EJS
 * superagent
 
-####installation
-
-### install some global stuff if you don't have it
-    npm install webpack -g
-
 ### install deps
     npm install
 
