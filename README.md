@@ -14,6 +14,7 @@ This is currently my go-to starter template for spinning up web stuff.
 * LESS
 * lodash
 * webpack
+* bluebird
 * EJS
 * superagent
 
